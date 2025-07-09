@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Math Fun</title>   
+    </head>
+
+    <body style="font-family: 'Courier New', Courier, monospace; background-color: aqua; padding: 20px;">
+    <h2> Math Methods </h2>
+
+    <p>Enter a Number</p>
+    <input id="num" type="number">
+
+    <br> <br>
+
+    <button onclick="roundIt()"> 🔵 Round</button>
+    <button onclick="floorIt()"> 🟡 Floor</button>
+    <button onclick="ceilIt()"> 🔴Ceil</button>
+
+    <p id="result" style="font-size: 18px; color: beige;"></p>
+
+    <script>
+        function roundIt()  {
+            let n = +document.getElementById("num").value;
+            docoment.getElementById("result").innerText= "Rounded" + Math.round(n);
+        }
+
+                function floorIt()  {
+            let n = +document.getElementById("num").value;
+            docoment.getElementById("result").innerText= "Rounded" + Math.floor(n);
+                }
+
+                        function CeilIt()  {
+            let n = +document.getElementById("num").value;
+            docoment.getElementById("result").innerText= "Rounded" + Math.ceil(n);
+                        }
+    </script>
+</html>
+
